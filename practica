@@ -1,0 +1,22 @@
+// Creamos la clase Persona, aqui le das el nombre a tu clase.
+class Persona{
+    
+    // Creamos las propiedades de la clase constructor(propiedades)
+    constructor(nombre, edad){
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    // Creamos el metodo saludar(), que hara la clase; es decir, las acciones que hara tu clase
+    // a partir de las propiedades. Ejemplo: saludar, presentarse, etc.
+    saludar(){
+        console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años`);
+    }
+}
+
+// Se crea el objeto persona1 apartir de la clase Persona
+const persona1 = new Persona('Jose Alfredo', 31);
+
+// Aqui mandamos a llamar al objeto persona1 con el metodo saludar(), dando como salida
+// el siguiente mensaje "Hola, mi nombre es Jose Alfredo y tengo 31 años"
+persona1.saludar();
